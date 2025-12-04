@@ -24,7 +24,7 @@ st.markdown("#### Leverage the power of Google's Gemini models to analyze resear
 # Initialize the Gemini LLM for conversational responses
 try:
     llm = ChatGoogleGenerativeAI(
-        model="gemini-2.5-flash",
+        model="gemini-2.5-pro", # Changed model from gemini-2.5-flash to gemini-2.5-pro
         temperature=0.1,
         max_tokens=2048
     )
@@ -117,7 +117,7 @@ with st.sidebar:
     st.markdown("""
         Upload your PDF research papers and ask specific questions about their content.
         
-        - **Model:** Gemini 2.5 Flash
+        - **Model:** Gemini 2.5 Pro (Updated)
         - **Embedding:** Google Generative AI Embedding 001
     """)
 
