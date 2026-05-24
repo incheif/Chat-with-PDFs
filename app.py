@@ -66,7 +66,7 @@ def save_uploaded_file(uploaded_file):
 def initialize_vector_store_from_upload(uploaded_files):
     """Initialize vector embeddings and FAISS vector store from uploaded files using Google Generative AI Embeddings."""
     # Use the GoogleGenerativeAIEmbeddings for consistency
-    embeddings = GoogleGenerativeAIEmbeddings(model="models/embedding-001")
+    embeddings = GoogleGenerativeAIEmbeddings(model="models/text-embedding-004")
     documents = []
 
     for uploaded_file in uploaded_files:
