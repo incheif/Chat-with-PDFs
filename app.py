@@ -73,7 +73,7 @@ def initialize_vector_store_from_upload(uploaded_files):
     """Create embeddings and vector store from uploaded PDFs."""
 
     embeddings = GoogleGenerativeAIEmbeddings(
-        model="text-embedding-004"
+        model="models/text-embedding-004"
     )
 
     documents = []
